@@ -1,0 +1,44 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Free Code Camp: Wikipedia Viewer</title>
+    <meta name="description" content="The HTML5 Herald">
+    <meta name="author" content="SitePoint">
+    <link rel="stylesheet" type="text/css" href="bower_components/semantic/dist/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="./src/styles.css">
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/semantic/dist/semantic.min.js"></script>
+
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+    <div class="ui column centered grid">
+        <div class="banner">
+            <div>Wikipedia Viewer</div>
+        </div>
+    </div>
+    <div class="ui two column centered grid">
+        <div class="ui two wide column"></div>
+        <div class="ui fluid search six wide column">
+            <div class="ui fluid big icon input">
+                <input id="search" class="prompt" type="text" placeholder="Search...">
+                <i class="search icon"></i>
+            </div>
+        </div>
+        <div class="ui fluid two wide column">
+            <div class="button ui inverted blue"> Random Wiki </div>
+        </div>
+    </div>
+    <ul id="container" class="column"></ul>
+    <script src="bower_components/moment/min/moment.min.js"></script>
+    <script src="./src/scripts.js"></script>
+</body>
+
+</html>
